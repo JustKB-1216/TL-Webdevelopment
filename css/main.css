@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 0;
+    background-color: #1B4242;
+    
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+/* Navigation bar styles */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5C8374;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    border-radius: 10px;
+    
+}
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+    display: flex;
+}
+
+.topnav ul li {
+    margin: 0 1em;
+}
+
+.topnav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+.topnav ul li a.active {
+    background-color: #092635;
+    border-radius: 20px;
+    border: 2px solid #092635; 
+}
+.topnav ul li a.signup{
+    
+    background-color: #145f16;
+    border-radius: 10px;
+    border: 2px solid #145f16; 
+}
+
+.topnav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Main content styles */
+.main {
+    text-align: left;
+    color: #ffffff;
+    padding: 50px 108px;
+}
+.main .aboutUs{
+    padding-bottom: 0px;
+    font-weight: 900;
+    font-size: 5em;
+    
+}
+.main .desc1 {
+    font-size: 24px;
+    padding-bottom: 48px;
+    margin-right: 500px;
+    border-bottom: solid;
+}
+.main .desc2{
+    font-size: 24px;
+    padding-bottom: 48px;
+    margin-right: 500px;
+}
+main img{
+    max-width: 90%;
+    height: auto;
+}
+.index-grid {
+    display: grid;
+    grid-template-columns: 224px auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
