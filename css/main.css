@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding-top: 0;
     background-color: #1B4242;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .italic{
     font-size: 24px;
@@ -89,12 +91,18 @@ header {
 /* Footer styles */
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: #9EC8B9;
-    color: black;
-  }
+    background-color: #092635;
+    color: #9EC8B9;
+    transition: bottom 0.2s ease-in-out;
+
+}
+
+.nav-down {
+    bottom: -40px;
+}
 .footer-p{
     align-items: center;
     text-align: center;
@@ -111,13 +119,14 @@ header {
     font-size: 0.8em;
     align-items: center;
     text-align: center;
+
     
 }
 .footer-custom-border{
     border-style: double;
     border-top: none;
     border-bottom: none;
-    border-color: rgb(14, 41, 16);
+    border-color: #9EC8B9;
 }
 .footer-grid-content a {
     text-decoration: none;
