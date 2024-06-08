@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 .italic{
     font-size: 24px;
@@ -90,7 +91,7 @@ header {
 
 /* Footer styles */
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -99,7 +100,6 @@ header {
     transition: bottom 0.2s ease-in-out;
 
 }
-
 .nav-down {
     bottom: -40px;
 }
