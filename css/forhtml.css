@@ -3,14 +3,8 @@ body {
     margin: 0;
     padding-top: 0;
     background-color: #1B4242;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
-.italic{
-    font-size: 24px;
-    font-style: italic;
-}
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -19,7 +13,6 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
-
 /* Header styles */
 header {
     position: fixed;
@@ -32,23 +25,15 @@ header {
 /* Navigation bar styles */
 .topnav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     background-color: #5C8374;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 1em 0;
 }
 
-.logo img {
-    height: 50px; /* Adjust the height as needed */
-    border-radius: 10px;
-    
-}
 .topnav ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 15px;
+    padding: 0;
     display: flex;
 }
 
@@ -65,13 +50,13 @@ header {
 }
 .topnav ul li a.active {
     background-color: #092635;
-    border-radius: 4px;
+    border-radius: 20px;
     border: 2px solid #092635; 
 }
 .topnav ul li a.signup{
     
     background-color: #145f16;
-    border-radius: 4px;
+    border-radius: 10px;
     border: 2px solid #145f16; 
 }
 
@@ -80,18 +65,34 @@ header {
     border-radius: 4px;
 }
 
-/* Main content styles */
-.main{
-    text-align: left;
-    color: #ffffff;
-    padding: 50px 108px;
-    padding-bottom: 9.8em
+.lesson-content{
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+.lesson-content h1{
+    color: white;
+    font-size: 4em;
+    margin-top: 80px;
+}
+
+.lesson-content h3{
+    color: white;
+    font-size: 3em;
+    
+}
+
+.lesson-content p{
+    display:block;
+    font-size: 25px;
+    color: white;
 }
 
 
-/* Footer styles */
+/*Footer styles*/
 .footer {
-    position: relative;
+    position: flex;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -113,7 +114,7 @@ header {
 }
 .footer-grid-container {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: auto auto auto;
     padding: 30px;
     font-size: 0.8em;
     align-items: center;
@@ -151,7 +152,6 @@ header {
     border-radius: 10%;
 }
 .fa:hover{
-    transition: .5s ease;
     opacity: 0.7;
 }
 .fa-facebook{

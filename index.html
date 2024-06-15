@@ -6,10 +6,10 @@
         <title>TL Webdevelopment</title>
         
         <!--Main style-->
-        <link rel="stylesheet" href="..\css\main.css">
+        <link rel="stylesheet" href="css/main.css">
 
         <!--Individual style--> 
-        <link rel="stylesheet" href="..\css\home.css">
+        <link rel="stylesheet" href="css/home.css">
 
         <!--Icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,13 +20,14 @@
         <header>
             <nav class="topnav">
                 <a href="href" class="logo">
-                     <img src="..\img\logo.jpg" alt="LOGO:">
+                     <img src="img\logo.jpg" alt="LOGO:">
                 </a>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Lessons</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="html/about.html">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="html/faq.html">FAQs</a></li>
                     <li><a href="#" class="signup">Sign-in</a></li>
                 </ul>
             </nav>
@@ -63,9 +64,8 @@
             </div>
             <div class="padding">
                 <div class="container">
-                    <img src="../img/html.png" alt="html" style="border-radius: 12px;"class="image">
-                    <div class="overlay">
-                        
+                    <img src="img/html.png" alt="html" style="border-radius: 12px;"class="image">
+                    <div class="htmlImage">
                     </div>
                 </div>
             </div>
@@ -87,8 +87,9 @@
                 </div>
             </div>
             <div class="padding">
-                <div class="img">
-                    <img src="../img/css2.png" alt="HTML" style="border-radius: 20px; border: 2px solid darkgreen; width: 700px; height: auto; margin-right: 35px;">
+                <div class="container">
+                    <img src="img/css.png" alt="css" style="border-radius: 12px;" class="image">
+                    <div class="cssImage"></div>
                 </div>
             </div>
         </div>
@@ -109,8 +110,8 @@
                 </div>
             </div>
             <div class="padding">
-                <div class="img">
-                    <img src="../img/css2.png" alt="HTML" style="border-radius: 20px; border: 2px solid darkgreen; width: 700px; height: auto; margin-right: 35px;">
+                <div class="img" id="jsImg">
+                    <a href="#jsImg" onclick="myAlert()"><img src="img/js.png" alt="HTML" style="border-radius: 20px; border: 2px solid darkgreen; width: 700px; height: auto; margin-right: 35px;"></a>
                 </div>
             </div>
         </div>
@@ -130,8 +131,17 @@
                         <a href="https://x.com/MIT_CSAIL/status/1363172815315214336?lang=en" class="fa fa-twitter"></a>
                     </div>
                 </div>
+                <div class="footer-grid-container">
+                    <div>
+                        
+                    </div>
+                    <div id="contact" style="font-size: medium;">
+                        Contact us:<br>09281383241<br>
+                        Email:<br>biazon.kevinmatthew@ncst.edu.ph<br>biboso.jamesryan@ncst.edu.ph
+                    </div>
+                </div>
             </div>
         </footer>
-        <script src="../js/home.js"></script>
+        <script src="js/home.js"></script>
     </body>
 </html>
