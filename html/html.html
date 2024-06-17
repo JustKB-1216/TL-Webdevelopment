@@ -2,17 +2,30 @@
 <html>
     <head>
         <title>Lesson: HTML</title>
+        <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/forhtml.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
     <header>
-        <nav class = "topnav">
+        <nav class="topnav">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.jpg" alt="LOGO:">
+            </a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Lessons</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Signup</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <div class="dropdown">
+                    <li><a href="">Lessons</a></li>
+                    <div class="dropdown-content">
+                            <a href="../html/html.html">HTML</a>
+                            <a href="../html/css.html">CSS</a>
+                            <a href="../html/js.html-">Javascript</a>
+                    </div>
+                </div>
+                <li><a href="../html/about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../html/faq.html">FAQs</a></li>
+                <li><a href="../html/signup.html" class="signup">Sign-in</a></li>
             </ul>
         </nav>
     </header>
@@ -28,36 +41,47 @@
            <img src = "../img/demo_html.PNG" alt="HTML demo"><br><br>
            Matapos ipasok ang code, i-save ang file at buksan ito gamit ang web browser na iyong napili.<br><br>
            Dapat ito ang makikitang resulta:<br><br>
-           <img src = "result_html.PNG" alt="HTML result" width="50%">
+           <img src = "../img/result_html.PNG" alt="HTML result" width="50%">
            <p>_____________________________________________________________________________________________________________</p>
         </p>
         <p>The first lesson is creating an HTML document that displays the text: <u>Hello World</u> in a web browser.<br><br>
         The first thing to do when creating an HTML document is opening your preferred text editor. It could be<br><br>
         <b>Notepad, VSCode, or Notepad++</b>; as long as you are comfortable using that particular text editor.<br><br><br>
         The next step is to type the following code below:<br><br>
-        <img src = "demo_html.PNG" alt="HTML demo"><br><br>
+        <img src = "../img/demo_html.PNG" alt="HTML demo"><br><br>
         After typing the code in, save the file and open it with a web browser of your choosing.<br><br>
         Which should show a result like this:<br><br>
-        <img src = "result_html.PNG" alt="HTML result" width="50%">
+        <img src = "../img/result_html.PNG" alt="HTML result" width="50%">
         </p>
     </div>
     </section>
     </main>
-    <div class="footer site-footer">
-        <div class="footer-grid-container">
-            <div>
-                Created by:<br>Biazon, Kevin Matthew P.<br>Biboso, James Ryan<br>BSCS 22M1
+    <footer>
+        <div class="footer">
+            <div class="footer-grid-container">
+                <div>
+                    Created by:<br>Biazon, Kevin Matthew P.<br>Biboso, James Ryan<br>BSCS 22M1
+                </div>
+                <div class="footer-custom-border">
+                    All rights reserved<br>This website was purely made for a Finals project in<br>Human Computer Interaction
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/share/v/vMbR1m4dZhhXrz9g/" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="https://youtu.be/xvFZjo5PgG0" class="fa fa-youtube"></a>
+                    <a href="https://x.com/MIT_CSAIL/status/1363172815315214336?lang=en" class="fa fa-twitter"></a>
+                </div>
             </div>
-            <div class="footer-custom-border">
-                All rights reserved<br>This website was purely made for a Finals project in<br>Human Computer Interaction
-            </div>
-            <div>
-                <a href="https://www.facebook.com/share/v/vMbR1m4dZhhXrz9g/" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="https://youtu.be/xvFZjo5PgG0" class="fa fa-youtube"></a>
-                <a href="https://x.com/MIT_CSAIL/status/1363172815315214336?lang=en" class="fa fa-twitter"></a>
+            <div class="footer-grid-container">
+                <div>
+                    
+                </div>
+                <div id="contact" style="font-size: medium;">
+                    Contact us:<br>09281383241<br>
+                    Email:<br>biazon.kevinmatthew@ncst.edu.ph<br>biboso.jamesryan@ncst.edu.ph
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
