@@ -2,17 +2,30 @@
 <html>
     <head>
         <title>Lesson: CSS</title>
-        <link rel="stylesheet" href="forcss.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/forcss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
     <header>
-        <nav class = "topnav">
+        <nav class="topnav">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo.jpg" alt="LOGO:">
+            </a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Lessons</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Signup</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <div class="dropdown">
+                    <li><a href="">Lessons</a></li>
+                    <div class="dropdown-content">
+                            <a href="../html/html.html">HTML</a>
+                            <a href="../html/css.html">CSS</a>
+                            <a href="../html/js.html">Javascript</a>
+                    </div>
+                </div>
+                <li><a href="../html/about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../html/faq.html">FAQs</a></li>
+                <li><a href="../html/signup.html" class="signup">Sign-in</a></li>
             </ul>
         </nav>
     </header>
@@ -31,15 +44,15 @@
            Ang susunod na hakbang ay ilagay ang linyang ito sa loob ng iyong HTML na dokumento para magamit ang mga code na
            napaloob sa CSS file:
            <br><br>
-           <img src = "demo_line_css.PNG" alt="CSS_line_in_HTML">
+           <img src = "../img/demo_line_css.PNG" alt="CSS_line_in_HTML">
            <br><br>
            Pagkatapos nito ay buksan ang ginawa nating CSS file at ilagay ang mga linyang ito bilang halimbawa:
            <br><br>
-           <img src = "demo_css.PNG" alt="CSS_example">
+           <img src = "../img/demo_css.PNG" alt="CSS_example">
            <br><br>
            Ang panghuli ay i-save ang CSS file at buksan muli ang HTML para makita ang resultang katulad nito:
            <br><br>
-           <img src = "result_css.PNG" alt="CSS_result" width="50%">
+           <img src = "../img/result_css.PNG" alt="CSS_result" width="50%">
            <br><br>
         </p>
         <p>_____________________________________________________________________________________________________________</p>
@@ -49,15 +62,15 @@
             <br><br>
             Put this line of code inside your HTML document to import the styles indicated in your CSS file:
             <br><br>
-            <img src = "demo_line_css.PNG" alt="CSS_line_in_HTML">
+            <img src = "../img/demo_line_css.PNG" alt="CSS_line_in_HTML">
             <br><br>
             Now, open your CSS file and enter the following:
             <br><br>
-            <img src = "demo_css.PNG" alt="CSS_example">
+            <img src = "../img/demo_css.PNG" alt="CSS_example">
             <br><br>
             Once that is done, open your HTML document and you should see the following result:
             <br><br>
-            <img src = "result_css.PNG" alt="CSS_result" width="50%">
+            <img src = "../img/result_css.PNG" alt="CSS_result" width="50%">
             <br><br>
         </p>
     </div>
