@@ -1,18 +1,57 @@
-
 .main .aboutUs{
     padding-bottom: 0px;
     font-weight: 900;
     font-size: 5em;
-    
+    margin-top: 3.5em;
 }
 .main .desc1 {
     font-size: 24px;
     padding-bottom: 48px;
-    margin-right: 500px;
+    margin-right: 0px;
     border-bottom: solid;
 }
 .main .desc2{
     font-size: 24px;
     padding-bottom: 48px;
-    margin-right: 500px;
+    margin-right: 0px;
 }
+.about-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.images-container{
+    display:grid;
+    grid-template-rows: 50% 50%;
+}
+.images-biazon{
+    margin-top: 10em;
+    width: 19.3em; 
+    height: auto; 
+    margin-left: 10em;
+    border: 3px dotted rgb(133, 232, 133);
+    padding: 1em;
+    transition: width 1s ease-out;
+}
+.images-biazon:hover{
+    width: 20em;
+    height:auto;
+}
+.images-biboso{
+    width: 19.2em; height: auto; margin-left: 20em;
+    margin-bottom: 0;
+    border: 3px dotted rgb(133, 232, 133);
+    padding: 1em;
+    transition: width 1s ease-out;
+}
+.images-biboso:hover{
+    width: 20.2em;
+    height:auto;
+}
+
+/* 
+    <p class="desc1">We decided that we should build a website that teaches people how to make websites in our own local language, we are aiming to teach amateur filipino
+                        programmers that are willing to learn website creation.
+                    
+                    <br style="border-bottom: 2px solid white;"><br>Napagpasyahan namin na dapat kaming bumuo ng isang website na nagtuturo sa mga tao kung paano gumawa ng mga website sa aming sariling lokal na wika, kami ay naglalayong magturo ng amateur na filipino
+                            mga programmer na handang matuto ng paggawa ng website.<br><br><div class="italic"> ~ Biazon, K.M, Biboso, J.R</div></p>
+*/
