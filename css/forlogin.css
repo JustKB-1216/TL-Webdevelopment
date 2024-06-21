@@ -55,6 +55,7 @@ p {
     width: 250px;
     height: auto;
     margin-top: 20px;
+    border-radius: 15px;
 }
 .grid-container{
     margin:200px;
