@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding-top: 0;
     background-color: #1B4242;
+    
 }
 
 p {
@@ -13,6 +14,7 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
+
 /* Header styles */
 
 /*body styles*/
@@ -56,11 +58,34 @@ p {
     height: auto;
     margin-top: 20px;
     margin-left: 30px;
+    border-radius: 5px;
 }
 .grid-container{
     margin:200px;
     display: grid;
     grid-template-columns: 75% 75%;
 }
+.link.login-link {
+    color: greenyellow;
+}
 
+.link.login-link:link {
+    color: greenyellow;
+}
+
+.link.login-link:visited {
+    color: rgb(169, 204, 110);
+}
+
+.link.login-link:hover {
+    color: rgb(131, 245, 147);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.link.login-link:active {
+    color: rgb(30, 255, 0);
+    background-color: transparent;
+    text-decoration: underline;
+}
 /*Footer styles*/

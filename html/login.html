@@ -2,14 +2,28 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="forlogin.css">
+    <link rel="stylesheet" href="../css/forlogin.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
-    <nav class = "topnav">
+    <nav class="topnav">
+        <a href="../index.html" class="logo">
+            <img src="../img/logo.jpg" alt="LOGO:">
+        </a>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="">Lessons</a></li>
+                <div class="dropdown-content">
+                        <a href="../html/html.html">HTML</a>
+                        <a href="../html/css.html">CSS</a>
+                        <a href="../html/js.html">Javascript</a>
+                </div>
+            </div>
+            <li><a href="../html/about.html">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="../html/faq.html">FAQs</a></li>
         </ul>
     </nav>
 </header>
@@ -21,16 +35,16 @@
               <input type="text" id="email">
               <label for="password">Password:</label>
               <input type="password" id="password" name="password">
-              <button type="submit">Login</button>
+              <button type="submit" style="margin-left: 0.5em; margin-top: 2em;">Login</button>
               <br><br>
-              <button type="button">Sign-Up</button>
+              <p style="text-align: center; color: white;">Don't have an account?  <a href="../html/signup.html" class="link login-link">Sign-up</a></p>
           </form>
         </div>
         <div class="grid-item-2">
-            <img src = "logo.jpg" alt="Logo Image" class="login-logo">
+            <img src = "../img/logo.jpg" alt="Logo Image" class="login-logo">
         </div>
     </div>
-    <div class="footer site-footer">
+    <div class="footer" style="margin-top: 10em;">
         <div class="footer-grid-container">
             <div>
                 Created by:<br>Biazon, Kevin Matthew P.<br>Biboso, James Ryan<br>BSCS 22M1
@@ -43,6 +57,15 @@
                 <a href="#" class="fa fa-google"></a>
                 <a href="https://youtu.be/xvFZjo5PgG0" class="fa fa-youtube"></a>
                 <a href="https://x.com/MIT_CSAIL/status/1363172815315214336?lang=en" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        <div class="footer-grid-container">
+            <div>
+                
+            </div>
+            <div id="contact" style="font-size: medium;">
+                Contact us:<br>09281383241<br>
+                Email:<br>biazon.kevinmatthew@ncst.edu.ph<br>biboso.jamesryan@ncst.edu.ph
             </div>
         </div>
     </div>
