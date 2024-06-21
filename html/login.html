@@ -32,10 +32,10 @@
         <div class="grid-item-1">
           <form class="login-form">
               <label for="email">Email:</label>
-              <input type="text" id="email">
+              <input type="text" id="email" oninput="saveInput('email')">
               <label for="password">Password:</label>
-              <input type="password" id="password" name="password">
-              <button type="submit" style="margin-left: 0.5em; margin-top: 2em;">Login</button>
+              <input type="password" id="password" name="password" oninput="saveInput('password')">
+              <button type="submit" style="margin-left: 0.5em; margin-top: 2em;" onclick="return login_pop_up()">Login</button>
               <br><br>
               <p style="text-align: center; color: white;">Don't have an account?  <a href="../html/signup.html" class="link login-link">Sign-up</a></p>
           </form>
@@ -69,5 +69,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>

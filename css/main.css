@@ -80,7 +80,6 @@ header {
     border-radius: 4px;
 }
 
-/* Main content styles */
 .main{
     text-align: left;
     color: #ffffff;
@@ -88,8 +87,6 @@ header {
     padding-bottom: 9.8em
 }
 
-
-/* Footer styles */
 .footer {
     position: relative;
     bottom: 0;
@@ -137,7 +134,6 @@ header {
     text-align: center;
     margin: 0px;
 }
-/*Unused grid code*/
 
 /*Footer Icons*/
 .fa{
@@ -171,7 +167,7 @@ header {
     color: white;
     
 }
-/* for dropdown */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -196,7 +192,6 @@ header {
     background-color: #ddd;
 
 }
-  
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+}

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/forsignup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <header>
     <nav class="topnav">
@@ -30,19 +31,19 @@
 <body>
     <div class="grid-container">
         <div class="grid-item-1">
-        <form class="login-form" style="padding-bottom: 15em;">
-            <label for="username">Username:</label>
-            <input type="text" id="username">
-            <label for="email">Email:</label>
-            <input type="text" id="email">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-            <button type="submit" style="margin-left: 0.5em; margin-top: 2em;">Sign-Up</button>
-            <br><br>
-            <p style="text-align: center; color: white;">Already have an account? <a href="../html/login.html" class="link login-link">Log-in</a></p>
-        </form>
+            <form class="login-form" style="padding-bottom: 15em;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" oninput="saveInput('username')">
+                <label for="email">Email:</label>
+                <input type="text" id="email" oninput="saveInput('email')">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" oninput="saveInput('password')">
+                <button type="submit" style="margin-left: 0.5em; margin-top: 2em;" onclick="return login_pop_up()">Sign-Up</button>
+                <br><br>
+                <p style="text-align: center; color: white;">Already have an account? <a href="../html/login.html" class="link login-link">Log-in</a></p>
+            </form>
         </div>
-        <div class = "grid-item-2">
+        <div class="grid-item-2">
             <img src="../img/logo.jpg" alt="Logo Image" class="login-logo">
         </div>
     </div>
@@ -71,5 +72,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/signup.js"></script>
 </body>
 </html>
